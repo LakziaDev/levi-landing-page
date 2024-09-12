@@ -1,13 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chá do Levi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <img src="./images/LEVI.png" alt="">
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/logo-levi.png" alt="Logo do Chá do Levi">
+            <p class="hero__text">
+                Este evento memorável começa em <span id="contador" ></span>
+            </p> 
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Rua Breno Bersa, 430
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Dia</b>
+                        22/09/2024 
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Horário</b>
+                        Às 15hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirme sua presença
+                </a>
+            </div>
+        
+        </div>
+    </header>
+    <section class="event event--listpresentlevi" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Lista de presentes para o Bebê</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iusto voluptate? Impedit, architecto. Minima dolor ut iure qui aliquid, exercitationem nisi tempora perferendis deserunt sapiente quidem blanditiis tenetur! Excepturi, quod?
+                </p>
+            </div>
+            <img class="event__image" src="./images/levi-astronauta.jpg" alt="Bebê">
+        </div>
+    </section>
+    <section class="event event--listpresentmother event--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Lista de presentes para a mamãe</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iusto voluptate? Impedit, architecto. Minima dolor ut iure qui aliquid, exercitationem nisi tempora perferendis deserunt sapiente quidem blanditiis tenetur! Excepturi, quod?
+                </p>
+            
+            <img class="event__image" src="./images/mother.jpg" alt="Uma mãe e seu bebê">
+        </div>
+    </section>
+        
+    <section class="event event--fest" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Uma festinha para criar expectativa com a chegada do Levi</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iusto voluptate? Impedit, architecto. Minima dolor ut iure qui aliquid, exercitationem nisi tempora perferendis deserunt sapiente quidem blanditiis tenetur! Excepturi, quod?
+                </p>
+            </div>
+            <img class="event__image" src="./images/fest.jpg" alt="Docinhos de Chá de Bebê">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
